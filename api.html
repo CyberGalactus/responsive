@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API</title>
+    <link rel="stylesheet" href="./api.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+      <div class="container">
+        <div class="navbar">
+          <H1 class="logo">EDU GARMA</H1>
+          <nav>
+            <ul id="menulist">
+              <li><a class="active" href="../website/test.html">Profile</a></li>
+              <li><a  href="">Skills</a></li>
+              <li><a  href="">Project / Experiment</a></li>
+              <li><a href="">Contact Me</a></li>
+            </ul>
+          </nav>
+          <img src="./588a6507d06f6719692a2d15.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+      
+   
+        <div class="output"></div>
+        <input type="number" value="5" min="0" max="10">
+        <button class="btn">Click Me</button>
+        <button class="btn1">clear</button>
+    </div>
+    <script src="./api.js"></script>
+
+    <script>
+      var menulist = document.getElementById("menulist");
+  
+      menulist.style.maxHeight = "0px";
+  
+      function togglemenu(){
+  
+        if(menulist.style.maxHeight == "0px")
+        {
+          menulist.style.maxHeight = "130px";
+        }
+        else
+        {
+          menulist.style.maxHeight = "0px"; 
+        }
+  
+      }
+    </script>
+
+    <footer>
+      <div class="footer-content">
+        <a href="../website/test.html">EDU GARMA</a>
+        <p>Thank you for visiting my page, you have reached the end
+           of the website. if you like to go
+           back to the beginning press the logo</p>
+           <ul class="socials">
+            <li><a href="https://sv-se.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/i/flow/login" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="https://www.linkedin.com/login/sv" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+          </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>copyright &copy;2022 Edu Garma. designed by <span>Edu Garma</span></p>
+      </div>
+    </footer>
+
+  </body>
+</html>
